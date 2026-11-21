@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maria Dunca – Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#eef2f0;--surface:#fbfcfb;--ink:#16241f;--muted:#4f625b;--line:#c9d4cf;--accent:#0f6b57;--accent-ink:#ffffff;--flag:#c8442b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a17;--surface:#16251f;--ink:#e8f0ec;--muted:#9fb3ab;--line:#2c4038;--accent:#59c9ae;--accent-ink:#0f1a17;--flag:#ff8a6e}}
+:root[data-theme="dark"]{--bg:#0f1a17;--surface:#16251f;--ink:#e8f0ec;--muted:#9fb3ab;--line:#2c4038;--accent:#59c9ae;--accent-ink:#0f1a17;--flag:#ff8a6e}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.9rem;padding-bottom:.9rem;flex-wrap:wrap}
+nav a{margin-right:1.1rem;text-decoration:none;color:var(--ink);font-weight:500}
+nav a:hover{color:var(--accent)}
+button{font:inherit;cursor:pointer}
+#theme-btn{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:.3rem .9rem}
+.hero{padding:4rem 0 3rem}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);font-weight:700;letter-spacing:-.02em}
+.hero p{max-width:38rem;font-size:1.15rem;color:var(--muted);margin:1.25rem 0 0}
+.links{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.75rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:500;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+section{padding:2.5rem 0;border-top:1px solid var(--line)}
+section h2{font-size:1.9rem;margin-bottom:1rem}
+.about-grid{display:grid;gap:1.5rem;grid-template-columns:1.4fr 1fr}
+.about-grid ul{margin:0;padding-left:1.1rem;color:var(--muted)}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.filters button{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+#project-list{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+.ticket{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:4px 4px 10px 10px;padding:1.1rem 1.2rem}
+.ticket h3{font-size:1.25rem;margin-bottom:.4rem}
+.ticket .tag{font-size:.85rem;color:var(--flag);font-weight:500}
+.ticket p{margin:.5rem 0;color:var(--muted)}
+.ticket dl{margin:.6rem 0 0;font-size:.92rem}
+.ticket dt{font-weight:500;display:inline}
+.ticket dd{display:inline;margin:0;color:var(--muted)}
+.ticket dd::after{content:"";display:block}
+#count{color:var(--muted);margin:0 0 1rem}
+footer{padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:640px){.about-grid{grid-template-columns:1fr}.hero{padding-top:2.5rem}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <nav aria-label="Main"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Résumé &amp; links</a></nav>
+  <button id="theme-btn" type="button" aria-pressed="false">Dark mode</button>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Maria Dunca</h1>
+    <p>I make workplaces run smoother. I’m a business administration graduate who focuses on process improvement, project management, and compliance, with experience in restaurant and franchise operations.</p>
+    <div class="links">
+      <a class="btn primary" href="resume.pdf">View My Résumé</a>
+      <a class="btn" href="#projects">See my projects</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>About me</h2>
+    <div class="about-grid">
+      <p>I earned my Associate degree in Business Administration from Los Angeles City College in June 2026. Before that, I spent almost nine years at Acquire BPO in the Philippines. I started in quality assurance and moved through process improvement, project management, and finally Lead Compliance Officer. I like finding where a process breaks down and fixing it so the team can work faster and with fewer errors.</p>
+      <div>
+        <strong>Career interests</strong>
+        <ul>
+          <li>Process improvement</li>
+          <li>Project coordination and management</li>
+          <li>Compliance and quality assurance</li>
+          <li>Restaurant and franchise operations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="filters" role="group" aria-label="Filter projects by skill">
+      <button type="button" data-filter="All" aria-pressed="true">All</button>
+      <button type="button" data-filter="Process" aria-pressed="false">Process improvement</button>
+      <button type="button" data-filter="Compliance" aria-pressed="false">Compliance</button>
+      <button type="button" data-filter="Operations" aria-pressed="false">Operations</button>
+    </div>
+    <p id="count" aria-live="polite"></p>
+    <div id="project-list"></div>
+  </section>
+
+  <section id="contact">
+    <h2>Résumé and links</h2>
+    <p>Want the full picture? Open my résumé, or connect with me on LinkedIn.</p>
+    <div class="links">
+      <a class="btn primary" href="resume.pdf">View My Résumé</a>
+      <a class="btn" href="https://www.linkedin.com/in/your-profile-name" target="_blank" rel="noopener">My LinkedIn profile</a>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Maria Dunca</div></footer>
+
+<script>
+// Project data: edit these entries to match your real work.
+var projects = [
+  {
+    title: "Workflow audit and redesign",
+    category: "Process",
+    description: "Mapped a multi-step team workflow, found where work was getting repeated or delayed, and proposed a shorter process with clear hand-offs.",
+    role: "Led the analysis and wrote the new process steps.",
+    tools: "Process maps, spreadsheets, written procedures"
+  },
+  {
+    title: "Quality and compliance checklist",
+    category: "Compliance",
+    description: "Built a checklist and review routine to check work against company and client standards, and to track corrective actions until they closed.",
+    role: "Designed the checklist and ran the reviews.",
+    tools: "Audit checklists, issue trackers, reporting templates"
+  },
+  {
+    title: "Franchise operations plan",
+    category: "Operations",
+    description: "Drafted an operations plan for a restaurant franchise, covering daily procedures, staffing roles, and quality standards across locations.",
+    role: "Researched and wrote the plan as a coursework project.",
+    tools: "Business plan templates, financial worksheets"
+  }
+];
+
+var currentFilter = "All";
+
+// Builds the project cards. Uses a loop and a conditional to show only matching projects.
+function showProjects(filter) {
+  var list = document.getElementById("project-list");
+  var shown = 0;
+  list.innerHTML = "";
+  for (var i = 0; i < projects.length; i++) {
+    var p = projects[i];
+    if (filter === "All" || p.category === filter) {
+      var card = document.createElement("article");
+      card.className = "ticket";
+      var tag = document.createElement("span");
+      tag.className = "tag";
+      tag.textContent = p.category === "Process" ? "Process improvement" : p.category;
+      var h = document.createElement("h3");
+      h.textContent = p.title;
+      var d = document.createElement("p");
+      d.textContent = p.description;
+      var dl = document.createElement("dl");
+      dl.innerHTML = "<dt>My role: </dt><dd></dd><dt>Tools: </dt><dd></dd>";
+      var dds = dl.querySelectorAll("dd");
+      dds[0].textContent = p.role;
+      dds[1].textContent = p.tools;
+      card.appendChild(tag); card.appendChild(h); card.appendChild(d); card.appendChild(dl);
+      list.appendChild(card);
+      shown++;
+    }
+  }
+  document.getElementById("count").textContent =
+    shown === 0 ? "No projects match this filter yet." : "Showing " + shown + " of " + projects.length + " projects";
+}
+
+var filterButtons = document.querySelectorAll(".filters button");
+for (var b = 0; b < filterButtons.length; b++) {
+  filterButtons[b].addEventListener("click", function () {
+    currentFilter = this.getAttribute("data-filter");
+    for (var k = 0; k < filterButtons.length; k++) {
+      filterButtons[k].setAttribute("aria-pressed", filterButtons[k] === this ? "true" : "false");
+    }
+    showProjects(currentFilter);
+  });
+}
+
+// Dark-mode toggle
+function toggleTheme() {
+  var root = document.documentElement;
+  var isDark = root.getAttribute("data-theme") === "dark" ||
+    (!root.getAttribute("data-theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  root.setAttribute("data-theme", isDark ? "light" : "dark");
+  var btn = document.getElementById("theme-btn");
+  btn.textContent = isDark ? "Dark mode" : "Light mode";
+  btn.setAttribute("aria-pressed", isDark ? "false" : "true");
+}
+document.getElementById("theme-btn").addEventListener("click", toggleTheme);
+if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  document.getElementById("theme-btn").textContent = "Light mode";
+  document.getElementById("theme-btn").setAttribute("aria-pressed", "true");
+}
+
+showProjects(currentFilter);
+</script>
+</body>
+</html>
